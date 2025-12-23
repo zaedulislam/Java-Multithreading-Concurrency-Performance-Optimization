@@ -13,21 +13,23 @@ into its constructor. Whatever code we write inside this run method is going to 
 by the operating system.
 */
 
-Thread thread = new Thread(new Runnable(){
+Thread thread = new Thread( new Runnable()
+{
   @Override
-  public void run(){
+  public void run()
+  {
     // Code that will run in a new thread
-    System.out.println("Hello from new thread");
+    System.out.println( "Hello from new thread" );
   }
-});
+} );
 
 
 // In Java eight and above, we can actually collapse this into a lambda, which makes the code more compact and readable.
 
-Thread thread = new Thread(() -> {
+Thread thread = new Thread( () -> {
   // Code that will run in a new thread
-  System.out.println("Hello from new thread");
-});
+  System.out.println( "Hello from new thread" );
+} );
 
 
 /*
@@ -79,8 +81,6 @@ public class Main
     Thread.sleep(10000);
   }
 }
-
-
 ````
 
 <p>
