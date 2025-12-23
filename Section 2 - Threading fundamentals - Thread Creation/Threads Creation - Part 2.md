@@ -58,7 +58,8 @@ public class Main
 <br>
 <p>
   By putting the logic inside a class that extends Thread, we get access to a lot of data and methods inside the run method that are directly 
-  related to the current thread.
+  related to the current thread. That's something we did not have in the previous method (Approach 1). So, for example, instead of calling the
+  static method to get the current thread, we can simply call this.getName(). And in fact, we have access to everything else directly.
 </p>
 
 ````java
