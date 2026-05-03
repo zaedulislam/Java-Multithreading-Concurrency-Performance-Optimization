@@ -24,5 +24,11 @@ Responsiveness is particularly critical when it comes to applications with a use
 ![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.3.png)
 
 ### Concurrency - Multitasking
-By multitasking quickly between different threads, our computer can create an illusion that all those tasks are actually happening in the same thing. The term we use for this kind of multitasking is **concurrency**. Not as that, we don't even need multiple cores to achieve concurrency.
+By multitasking quickly between different threads, our computer can create an illusion that all those tasks are actually happening in the same time. The term we use for this kind of multitasking is **concurrency**. Note that, we don't even need multiple cores to achieve **concurrency**.
 ![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.4.png)
+
+## 2. Performance
+The second reason we need multithreading is performance.
+- As mentioned before, using concurrency, we can create an illusion of multiple tasks running in parallel just with single core with multiple threads. 
+- we can truly run multiple tasks completely in parallel. The performance back of multithreading is the ability to complete a complex task in a fraction of the time, it would take us to complete it otherwise. We can finish much more work in the same period of time than with a single thread.
+![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.5.png)
