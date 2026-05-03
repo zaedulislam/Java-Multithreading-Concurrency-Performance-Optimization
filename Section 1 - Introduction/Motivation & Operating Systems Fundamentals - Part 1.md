@@ -13,11 +13,16 @@ These are all examples of poor responsiveness, which we would like to avoid if w
 
 ### Responsiveness with a Single Thread
 Suppose we have an online store web publication that serves thousands of users. The application stores all information about each user's purchases in a database. If one user makes a large purchase of multiple items, which results in a long operation in the database and in the same time, another user is desperate to complete his purchase. That second user will not get any response until the web app is done in responding to the first request.
+![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.1.png)
 
-![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.png)
-
-
-### Responsiveness with Multithreading
+### 1. Responsiveness with Multithreading
 With multithreading, we could actually serve multiple users simultaneously, but serving each request on a different thread.
-![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_2.png)
+![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.2.png)
 
+### 2. Responsiveness in User Interface
+Responsiveness is particularly critical when it comes to applications with a user interface. A good example for this can be a movie player application. The application is showing us images, play the audio. And in the same time, we expect that if we move the mouse or click a button, we would get an instant feedback for our actions on the screen. This kind of responsiveness can be achieved by using multiple threads, each thread for a different task. And it's generally very hard to achieve otherwise.
+![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.3.png)
+
+### Concurrency - Multitasking
+By multitasking quickly between different threads, our computer can create an illusion that all those tasks are actually happening in the same thing. The term we use for this kind of multitasking is **concurrency**. Not as that, we don't even need multiple cores to achieve concurrency.
+![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.4.png)
