@@ -65,4 +65,20 @@ In a multithreaded application, each thread comes with its own stack and its own
 ![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.11.png)
 
 ### What the thread contains
+- The stack is a region in memory where the local variables are stored and functions are executed.
+- The instruction pointer is nothing more than a pointer that points to the address of the next instruction that the thread is going to execute.
+
+It's easy to understand why each thread has its own stack and its own instruction pointer. If we remember that each thread is executing a different instruction in a different function at any given moment.
 ![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.12.png)
+
+## Summary
+- Motivation for multithreading
+    - Responsiveness achieved by **concurrency**
+    - Performance achieved by **parallelism**
+- Threads are and what they contain
+    - Stack
+    - Insturction pointer
+- What threads share
+    - Files
+    - Heap
+    - Code
