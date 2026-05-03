@@ -30,5 +30,21 @@ By multitasking quickly between different threads, our computer can create an il
 ## 2. Performance
 The second reason we need multithreading is performance.
 - As mentioned before, using concurrency, we can create an illusion of multiple tasks running in parallel just with single core with multiple threads. 
-- we can truly run multiple tasks completely in parallel. The performance back of multithreading is the ability to complete a complex task in a fraction of the time, it would take us to complete it otherwise. We can finish much more work in the same period of time than with a single thread.
+- we can truly run multiple tasks completely in parallel. 
+
 ![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.5.png)
+
+### 2. Performance - Impact
+- The performance impact of multithreading is the ability to complete a complex task in a fraction of the time, it would take us to complete it otherwise. 
+- We can finish much more work in the same period of time than with a single thread.
+- And if we're running a high scale service on multiple machines, we will need less machines, which will also mean less expenses on infrastructure and more money in our pocket.
+
+## Multithreading Caveat
+Multithreaded programming is fundamentally different than the traditional single threaded sequential programming. And a lot of the intuition we have from single threaded application development will actually break when we introduce multiple threads.
+
+## Introduction to OS
+### What Threads are and Where They Live
+
+![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.6.png)
+
+![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.7.png)
