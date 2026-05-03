@@ -48,14 +48,21 @@ Multithreaded programming is fundamentally different than the traditional single
 ![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.6.png)
 
 When we turn on our computer, an especial program called the operating system is loaded from the disc into the memory. The operating system takes over and provides an obstruction for us (the application developers), and helps us interact with the hardware and the CPU. So we can focus on developing our apps.
-
 ![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.7.png)
 
 
 All our applications, such as the text editor, a web browser, or a music player reside on a disc in a form of a file, just like any other music file, image or document.
-
 ![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.8.png)
 
 When a user runs application, the operating system takes the program from the disc and creates an instance of that application in the memory. That instance is called a **process**, and it's also sometimes called a **context of an application**image.
-
 ![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.9.png)
+
+### Single Threaded Application Process
+Each process is completely isolated from any other process that runs on the system. A few of the things that the process contains are the metadata, like the process ID, the files that the application opens for reading and writing, the code (which is the program instructions that are going to be executed on the CPU), the heap (which contains all the data our application needs). And finally, at least one thread called the **main thread**. The thread contains two main things, the stack and the instruction pointer.
+![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.10.png)
+
+In a multithreaded application, each thread comes with its own stack and its own instruction pointer, but all the rest of the components in the process are shared.
+![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.11.png)
+
+### What the thread contains
+![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.12.png)
