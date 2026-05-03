@@ -15,3 +15,9 @@ These are all examples of poor responsiveness, which we would like to avoid if w
 Suppose we have an online store web publication that serves thousands of users. The application stores all information about each user's purchases in a database. If one user makes a large purchase of multiple items, which results in a long operation in the database and in the same time, another user is desperate to complete his purchase. That second user will not get any response until the web app is done in responding to the first request.
 
 ![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_1.png)
+
+
+### Responsiveness with Multithreading
+With multithreading, we could actually serve multiple users simultaneously, but serving each request on a different thread.
+![](https://github.com/zaedulislam/Java-Multithreading-Concurrency-Performance-Optimization/blob/main/images/image_2.png)
+
